@@ -1,0 +1,486 @@
+// // {
+// //     "editor.semanticTokenColorCustomizations": {
+// //         "[Default Dark+]": {
+// //             "enabled": true,
+
+
+// //                     "editor.background": "#060a03",
+// //                     "editor.foreground": "#ffffff",
+// //                     "textMateRules": [
+// //                         {
+// //                             "scope": "emphasis",
+// //                             "settings": {
+// //                                 "fontStyle": "italic"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "strong",
+// //                             "settings": {
+// //                                 "fontStyle": "bold"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "meta.diff.header",
+// //                             "settings": {
+// //                                 "foreground": "#000080"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "comment",
+// //                             "settings": {
+// //                                 "foreground": "#475243"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "constant.language",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": [
+// //                                 "constant.numeric",
+// //                                 "constant.other.color.rgb-value",
+// //                                 "constant.other.rgb-value",
+// //                                 "support.constant.color"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#b5cea8"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "constant.regexp",
+// //                             "settings": {
+// //                                 "foreground": "#b46695"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "entity.name.tag",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "entity.name.tag.css",
+// //                             "settings": {
+// //                                 "foreground": "#d7ba7d"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "entity.other.attribute-name",
+// //                             "settings": {
+// //                                 "foreground": "#9cdcfe"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": [
+// //                                 "source.css entity.other.attribute-name",
+// //                                 "source.css.less entity.other.attribute-name.id",
+// //                                 "source.scss entity.other.attribute-name"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#d7ba7d"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "invalid",
+// //                             "settings": {
+// //                                 "foreground": "#f44747"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.underline",
+// //                             "settings": {
+// //                                 "fontStyle": "underline"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.bold",
+// //                             "settings": {
+// //                                 "fontStyle": "bold"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.heading",
+// //                             "settings": {
+// //                                 "foreground": "#6796e6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.italic",
+// //                             "settings": {
+// //                                 "fontStyle": "italic"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.inserted",
+// //                             "settings": {
+// //                                 "foreground": "#b5cea8"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.deleted",
+// //                             "settings": {
+// //                                 "foreground": "#ce9178"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "markup.changed",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "meta.selector",
+// //                             "settings": {
+// //                                 "foreground": "#d7ba7d"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "brackets of XML/HTML tags",
+// //                             "scope": [
+// //                                 "punctuation.definition.tag"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#808080"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "meta.preprocessor",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "meta.preprocessor.string",
+// //                             "settings": {
+// //                                 "foreground": "#ce9178"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "meta.preprocessor.numeric",
+// //                             "settings": {
+// //                                 "foreground": "#b5cea8"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "meta.structure.dictionary.key.python",
+// //                             "settings": {
+// //                                 "foreground": "#9cdcfe"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "storage",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "storage.type",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "storage.modifier",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "string",
+// //                             "settings": {
+// //                                 "foreground": "#c3e626"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "string.tag",
+// //                             "settings": {
+// //                                 "foreground": "#ce9178"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "string.value",
+// //                             "settings": {
+// //                                 "foreground": "#ce9178"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "string.regexp",
+// //                             "settings": {
+// //                                 "foreground": "#d16969"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "JavaScript string interpolation ${}",
+// //                             "scope": [
+// //                                 "punctuation.definition.template-expression.begin.js",
+// //                                 "punctuation.definition.template-expression.begin.ts",
+// //                                 "punctuation.definition.template-expression.end.ts",
+// //                                 "punctuation.definition.template-expression.end.js"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": [
+// //                                 "support.type.vendored.property-name",
+// //                                 "support.type.property-name",
+// //                                 "variable.css",
+// //                                 "variable.scss",
+// //                                 "variable.other.less"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#d4d4d4"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "keyword",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "keyword.control",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "keyword.operator",
+// //                             "settings": {
+// //                                 "foreground": "#d4d4d4"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": [
+// //                                 "keyword.operator.new",
+// //                                 "keyword.operator.expression",
+// //                                 "keyword.operator.cast",
+// //                                 "keyword.operator.sizeof",
+// //                                 "keyword.operator.logical.python"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "keyword.other.unit",
+// //                             "settings": {
+// //                                 "foreground": "#b5cea8"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "support.function.git-rebase",
+// //                             "settings": {
+// //                                 "foreground": "#d4d4d4"
+// //                             }
+// //                         },
+// //                         {
+// //                             "scope": "constant.sha.git-rebase",
+// //                             "settings": {
+// //                                 "foreground": "#b5cea8"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "coloring of the Java import and package identifiers",
+// //                             "scope": [
+// //                                 "storage.modifier.import.java",
+// //                                 "variable.language.wildcard.java",
+// //                                 "storage.modifier.package.java"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#d4d4d4"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "coloring of the TS this",
+// //                             "scope": "variable.language.this",
+// //                             "settings": {
+// //                                 "foreground": "#569cd6"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "Function declarations",
+// //                             "scope": [
+// //                                 "entity.name.function",
+// //                                 "support.function",
+// //                                 "support.constant.handlebars"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#f9c005"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "Types declaration and references",
+// //                             "scope": [
+// //                                 "meta.return-type",
+// //                                 "support.class",
+// //                                 "support.type",
+// //                                 "entity.name.type",
+// //                                 "entity.name.class",
+// //                                 "source.cs storage.type"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#0a6c59"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "Types declaration and references, TS grammar specific",
+// //                             "scope": [
+// //                                 "meta.type.cast.expr",
+// //                                 "meta.type.new.expr",
+// //                                 "support.constant.math",
+// //                                 "support.constant.dom",
+// //                                 "support.constant.json",
+// //                                 "entity.other.inherited-class"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#4EC9B0"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "Control flow keywords",
+// //                             "scope": "keyword.control",
+// //                             "settings": {
+// //                                 "foreground": "#C586C0"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "Variable and parameter name",
+// //                             "scope": [
+// //                                 "variable",
+// //                                 "meta.definition.variable.name",
+// //                                 "support.variable"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#c51ace"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "Object keys, TS grammar specific",
+// //                             "scope": [
+// //                                 "meta.object-literal.key",
+// //                                 "meta.object-literal.key entity.name.function"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#9CDCFE"
+// //                             }
+// //                         },
+// //                         {
+// //                             "name": "CSS property value",
+// //                             "scope": [
+// //                                 "support.constant.property-value",
+// //                                 "support.constant.font-name",
+// //                                 "support.constant.media-type",
+// //                                 "support.constant.media",
+// //                                 "constant.other.color.rgb-value",
+// //                                 "constant.other.rgb-value",
+// //                                 "support.constant.color"
+// //                             ],
+// //                             "settings": {
+// //                                 "foreground": "#CE9178"
+// //                             }
+// //                         }
+// //                     ]
+// //                 }
+                
+            
+        
+// //     }
+// // }
+
+// {
+//     "editor.semanticTokenColorCustomizations": {
+//       "[Default Dark+]": {
+//         "enabled": true,
+  
+//         "rules": {
+//           "builtinType": "#1170bf",
+//           "comment": "#626364",
+//           "enum": "#57adf3",
+//           "enumMember": "#e2e6a4",
+//           "formatSpecifier": "#6abfca",
+//           "function.attribute": "#ad7da4",
+//           "function": "#ffb067",
+//           "interface": "#4fc5bb",
+//           "keyword.controlFlow": "#e083cc",
+//           "keyword": "#ad86d6",
+//           "macro": "#fa7f38",
+//           "namespace": "#be7660",
+//           "number": "#21cd03",
+//           "operator": "#fa5538",
+//           "parameter.mutable": {
+//             "underline": false
+//           },
+//           "parameter": "#7fc6f2",
+//           "punctuation.injected": "#D4D4D4",
+//           "selfKeyword.mutable": {
+//             "underline": false
+//           },
+//           "selfKeyword": "#f08cad",
+//           "string": "#a6b40c",
+//           "struct": "#57adf3",
+//           "typeAlias": "#095898",
+//           "typeParameter": "#125d9b",
+//           "union": "#57adf3",
+//           "unresolvedReference": "#accfcf",
+//           "variable.mutable": {
+//             "underline": true
+//           },
+//           "entity.name.type": "#0a6c59",
+//           "variable.static": "#8ae9e4",
+//           "variable": "#88cdf3"
+//         }
+//       }
+//     },
+  
+// // //     // "editor.tokenColorCustomizations": {
+// // //     //     "[Default Dark+]": {
+// // //     //         "comments": "#494a4c",
+// // //     //         "functions": "#ffb067",
+// // //     //         "keywords": "#ad86d6",
+// // //     //         "numbers": "#58daa4",
+// // //     //         "strings": "#bae85d",
+// // //     //         "textMateRules": [
+// // //     //             {
+// // //     //                 "scope": "meta.type_params.rust",
+// // //     //                 "settings": {
+// // //     //                     "foreground": "#1c83d7",
+// // //     //                     "fontStyle": ""
+// // //     //                 }
+// // //     //             },
+// // //     //             {
+// // //     //                 "scope": "entity.name.type.core.rust",
+// // //     //                 "settings": {
+// // //     //                     "foreground": "#4fc5bb",
+// // //     //                     "fontStyle": ""
+// // //     //                 }
+// // //     //             },
+// // //     //             {
+// // //     //                 "scope": "meta.function.parameter",
+// // //     //                 "settings": {
+// // //     //                   "fontStyle": "italic",
+// // //     //                   "foreground": "#fbff0d"
+// // //     //                 }
+// // //     //               }
+// // //     //         ],
+// // //     //         "types": "#238bdf",
+// // //     //         "variables": "#1779ad"
+// // //     //     }
+// // //     // },
+  
+//     "workbench.colorCustomizations": {
+//       // Name of the theme you are currently using
+//       "[Default Dark+]": {
+//         "editorInlayHint.foreground": "#868686f0",
+//         "editorInlayHint.background": "#3d3d3d48",
+  
+//         // Overrides for specific kinds of inlay hints
+//         "editorInlayHint.typeForeground": "#2e8bf5f0",
+//         "editorInlayHint.parameterForeground": "#015108f0"
+//       }
+//     }
+//   }
+  
