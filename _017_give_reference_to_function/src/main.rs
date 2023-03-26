@@ -41,27 +41,51 @@
 //     print_country_ref(&country);
 // }
 
-// CASE 3:
+// // CASE 3:
 
-// 3. This function receives a mutable reference (so it can mutate the variables
-//    referred value but does not take ownership)
-fn add_india(country_name: &mut String) {
-    // 4. The value (of the reference that is owned by the caller) is mutated
+// // 3. This function receives a mutable reference (so it can mutate the variables
+// //    referred value but does not take ownership)
+// fn add_india(country_name: &mut String) {
+//     // 4. The value (of the reference that is owned by the caller) is mutated
+//     country_name.push_str("-India");
+//     println!("Combined: {}", country_name);
+// }
+
+// fn main() {
+//     // 1. Here we create variable country that is the owner of the String "China"
+//     //    and this variable is now mutable
+//     let mut country = String::from("China");
+//     // 2. We give a reference to this variable to add_india function and this
+//     //    reference is a mutable reference (so we would not be able to give other mutable
+//     //    references or immutable references to it)
+//     add_india(&mut country);
+//     // 5. Because we only gave reference to the variable it is still available
+//     add_india(&mut country);
+//     // 6. And because the reference was mutable and we mutated the value
+//     //    its value has indeed changed
+//     println!("Current: {} = China-India-India", country);
+// }
+
+// CASE 4:
+
+// 3. Here we accept the variable but we take it in AND declare that
+//    now the variable IS mutable (the mut keyword is before the variable name,
+//    not as its type; we can do this because we have ownership of the variable now)
+fn add_india(mut country_name: String) {
     country_name.push_str("-India");
     println!("Combined: {}", country_name);
+    // 4. When we leave this function, the variable dies and the value is lost
 }
 
 fn main() {
     // 1. Here we create variable country that is the owner of the String "China"
-    //    and this variable is now mutable
-    let mut country = String::from("China");
-    // 2. We give a reference to this variable to add_india function and this
-    //    reference is a mutable reference (so we would not be able to give other mutable
-    //    references or immutable references to it)
-    add_india(&mut country);
-    // 5. Because we only gave reference to the variable it is still available
-    add_india(&mut country);
-    // 6. And because the reference was mutable and we mutated the value
-    //    its value has indeed changed
-    println!("Current: {} = China-India-India", country);
+    //    and this variable is NOT mutable
+    let country = String::from("China");
+    // 2. We give this variable to add_india function (not a reference,
+    //    but the variable and its ownership)
+    add_india(country);
+
+    // 5. Because we gave the variable away it is no longer available
+    //    and the below command would not work
+    // add_india(country);
 }
